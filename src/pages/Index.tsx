@@ -1,11 +1,27 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from "react";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { Hero } from "@/components/home/Hero";
+import { TrustedBy } from "@/components/home/TrustedBy";
+import { Services } from "@/components/home/Services";
+import { TherapistFeature } from "@/components/home/TherapistFeature";
+import { FAQ } from "@/components/home/FAQ";
+import { CTASection } from "@/components/home/CTASection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="bg-white overflow-hidden">
+      <div className="flex w-full flex-col items-center pt-10 max-md:max-w-full">
+        <div className="flex min-h-[1448px] w-[1440px] max-w-full flex-col items-stretch">
+          <Header />
+          <Hero />
+        </div>
+        <TrustedBy />
+        <Services />
+        <TherapistFeature />
+        <FAQ />
+        <CTASection />
+        <Footer />
       </div>
     </div>
   );
